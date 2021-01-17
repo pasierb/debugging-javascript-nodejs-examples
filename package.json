@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "server:debug": "node --inspect src/server.js",
+    "script:debug": "node --inspect-brk src/script.js",
+    "ts:debug": "node -r ts-node/register --inspect-brk src/script.ts",
+    "test:debug": "node --inspect-brk ./node_modules/.bin/jest --runInBand"
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
